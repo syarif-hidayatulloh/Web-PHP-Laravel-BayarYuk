@@ -1,0 +1,207 @@
+:root {
+    /* Color */
+    --by-primary: #007bff;
+    --by-blue: #6AC9F2;
+    --by-green: #9BCB50;
+    --by-yellow: #FBEE41;
+    --by-orange: #F99E2F;
+    --by-red: #EE3153;
+    --by-purple: #A059A3;
+    --by-gray-0: #AEAEAE;
+    --by-gray-1: #CCC;
+    --by-gray-2: #EBEBEB;
+    --by-black: #202020;
+    /* Font */
+    --by-nunito: 'Nunito', sans-serif;
+    --by-lato: 'Lato', sans-serif;
+    /* Dekstop Text */
+    --by-headline: normal bold 40px/48px var(--by-nunito);
+    --by-title: normal normal 24px/40px var(--by-nunito);
+    --by-subtitle: normal normal 18px/28px var(--by-lato);
+    --by-callout: normal bold 16px/19px var(--by-lato);
+    --by-body: normal normal 16px/28px var(--by-lato);
+    --by-label: normal normal 12px/24px var(--by-lato);
+    --by-caption: normal normal 14px/24px var(--by-lato);
+}
+
+/* Components - Fonts */
+
+.by-text-headline {
+    font: var(--by-headline);
+    color: var(--by-black);
+}
+
+.by-text-title {
+    font: var(--by-title);
+    color: var(--by-black);
+}
+
+.by-text-subtitle {
+    font: var(--by-subtitle);
+    color: var(--by-black);
+}
+
+.by-text-callout {
+    font: var(--by-callout);
+    color: var(--by-black);
+}
+
+.by-text-body {
+    font: var(--by-body);
+    color: var(--by-black);
+}
+
+.by-text-label {
+    font: var(--by-label);
+    color: var(--by-black);
+}
+
+.by-text-caption {
+    font: var(--by-caption);
+    color: var(--by-black);
+}
+
+.text-green {
+    color: var(--by-green);
+}
+
+.text-blue {
+    color: var(--by-blue);
+}
+
+.text-blue-primary {
+    color: var(--by-primary);
+}
+
+.text-yellow {
+    color: var(--by-yellow);
+}
+
+.text-orange {
+    color: var(--by-orange);
+}
+
+.text-gray-0 {
+    color: var(--by-gray-0);
+}
+
+.text-red {
+    color: var(--by-red);
+}
+
+/* Components - Background */
+
+.bg-green {
+    background-color: var(--by-green);
+}
+
+.bg-blue {
+    background-color: var(--by-blue);
+}
+
+.bg-blue-primary {
+    background-color: var(--by-primary);
+}
+
+.bg-yellow {
+    background-color: var(--by-yellow);
+}
+
+.bg-orange {
+    background-color: var(--by-orange);
+}
+
+.bg-gray-0 {
+    background-color: var(--by-gray-0);
+}
+
+.bg-red {
+    background-color: var(--by-red);
+}
+
+/* Components - Breadcrumb */
+
+.breadcrumb {
+    background: transparent;
+    padding-left: 0;
+}
+
+.breadcrumb * {
+    color: var(--by-black);
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .5rem;
+    color: var(--by-blue);
+    content: "\203A ";
+}
+
+/* Components - Head */
+
+header .navbar {
+    box-shadow: 0px 8px 16px rgba(209, 224, 231, 0.32);
+}
+
+header .navbar .badge-secondary {
+    background-color: var(--by-gray-0);
+}
+
+.head-content h5 {
+    font: var(--by-title) !important;
+}
+
+/* Components - Login */
+
+div.welcome div.container.card-login div.row:first-child {
+    height: 15rem;
+}
+
+div.welcome div.card {
+    margin-top: 5rem;
+}
+
+div.welcome a.btn-outline-primary {
+    color: unset;
+}
+
+section.login div.card {
+    box-shadow: 0px 0px 16px 0px rgba(184, 203, 212, 0.32);
+}
+
+section.login {
+    margin-top: 4rem;
+}
+
+section.login div.card {
+    min-height: 15rem;
+}
+
+section.login .col-lg-8 {
+    background: url(../img/student-girl.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+section.login .col-lg-8 .color-layer {
+    background-color: rgba(17, 9, 49, 0.35);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 575.98px) {
+    div.welcome div.card {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    div.welcome div.card {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
